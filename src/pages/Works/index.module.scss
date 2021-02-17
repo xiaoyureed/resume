@@ -1,0 +1,61 @@
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 50%;
+  margin: 1rem auto;
+  align-content: space-around;
+  position: relative;
+  .work {
+    // border: 1px solid gray;
+    border-radius: 10px;
+    overflow: auto;
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    flex: none;
+    position: relative;
+    // 必须初始化, 动画才会生效
+    top: 0;
+    left: 0;
+    .projImgWrapper {
+      width: 10%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content:flex-start;
+      align-items: center;
+      .projImg {
+        width: 100%;
+        height: 30%;
+      }
+    }
+    
+    .brief {
+      margin: 0.5rem;
+      h3 {
+        margin-top: 1rem;
+      }
+      p {
+        color: #555;
+        margin: 1rem auto;
+      }
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        span {
+          background-color: lightgreen;
+          border-radius: 4px;
+          padding: 0 0.5rem;
+          margin: 0.2rem 0.2rem;
+        }
+      }
+    }
+    &:hover {
+      box-shadow: 0 0 18px gray;
+      left: -2px;
+      top: -3px;
+      transition: box-shadow 0.5s ease, left 0.5s ease, top 0.5s ease;
+    }
+  }
+}

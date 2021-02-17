@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  .brief {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    img {
+      width: 10rem;
+      margin: 1rem auto;
+      border-radius: 50%;
+      &:hover {
+        border: 1px solid lightgreen;
+      }
+    }
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 1rem auto;
+      li {
+        background-color: lightgreen;
+        padding: 0.5rem 1rem;
+        margin: 0 0.2rem;
+        border-radius: 4px;
+      }
+    }
+    div {
+      margin: 1rem auto;
+    }
+  }
+  .works {
+    padding: 1rem 0;
+    .title {
+      text-align: center;
+      margin: 2rem auto;
+    }
+  }
+}

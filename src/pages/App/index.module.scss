@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  // 最小高度也要充满屏幕
+  min-height: 100vh;
+  .header {
+    height: 80px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .headerLeft {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      text-transform: uppercase;
+      .headerLeftLink {
+        color: #555;
+        letter-spacing: 0.5rem;
+        transition: letter-spacing .5s ease;
+        position: relative;
+        .icon {
+          position: absolute;
+          left: 100%;
+        }
+        &:hover {
+          letter-spacing: 0;
+          transition: letter-spacing .5s ease;
+          .icon {
+            left: -30%;
+            transition: left 2s ease;
+          }
+        }
+      }
+    }
+    .headerRight {
+      list-style: none;
+      display: flex;
+      flex: 3;
+      align-items: center;
+      justify-content: flex-end;
+      margin-right: 3rem;
+      .menuItem {
+        padding: 0.8rem 2rem;
+        .menuItemLink {
+          color: #555;
+          cursor: pointer;
+        }
+        .menuItemLinkActive {
+          border-bottom: 0.1rem solid #333;
+        }
+      }
+    }
+  }
+  .footer {
+    text-align: center;
+    // height: 100px;
+    padding: 50px 0;
+    background-color: #fafafa;
+    color: #555;
+    border-top: 1px solid #f2f2f2;
+    p {
+      padding: 2px 0;
+    }
+  }
+  .content {
+    // 高度自适应
+    flex: none;
+  }
+}
